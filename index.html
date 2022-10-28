@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Loja de Bolos</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main class="site-inteiro">
         <header class="cabecalho">
@@ -16,14 +18,14 @@
             </h1>
         </header>
         <nav class="menu-principal">
-            <a href="#" class="item-menu" >CARDAPIO</a> -
-            <a href="#" class="item-menu" >FOTOS</a> -
-            <a href="#" class="item-menu" >CONTATO</a> 
+            <a href="#cardapio" class="item-menu">CARDAPIO</a> -
+            <a href="#fotos" class="item-menu">FOTOS</a> -
+            <a href="#contato" class="item-menu">CONTATO</a>
         </nav>
         <div class="banner">
             <img src="imagens/fundo-banner2.png" class="imagem-banner">
         </div>
-        <div class="cardapio">
+        <div class="cardapio" id="cardapio">
             <h2 class="titulo-cardapio">Cardápio</h2>
             <ul class="lista-cardapio">
                 <li>Bolo de Laranja R$ 19,00</li>
@@ -57,10 +59,10 @@
                 <li>Bolo de Laranja R$ 19,00</li>
                 <li>Bolo de chocolate R$ 25,00</li>
                 <li>Bolo de limão R$ 25,00</li>
-                <li>Bolo de fubá R$ 19,00</li>    
+                <li>Bolo de fubá R$ 19,00</li>
             </ul>
         </div>
-        <div class="galeria-fotos">
+        <div class="galeria-fotos" id="fotos">
             <h2 class="titulo-galeria">Fotos</h2>
             <div class="linha-fotos">
                 <img src="imagens/foto-bolo.png" alt="Bolo de Frutas Vermelhas" class="foto-bolo">
@@ -68,11 +70,27 @@
                 <img src="imagens/foto-bolo3.png" alt="Bolo de Sorvete" class="foto-bolo">
             </div>
         </div>
-        <div class="contato">
+        <div class="contato" id="contato">
             <h2 class="titulo-contato">Contato</h2>
             <div class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14717.316270546611!2d-47.3378487675542!3d-22.75316607352895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8998174c896b9%3A0x739b7f99b3323574!2sSenac%20Americana!5e0!3m2!1spt-BR!2sbr!4v1666917512481!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14717.316270546611!2d-47.3378487675542!3d-22.75316607352895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8998174c896b9%3A0x739b7f99b3323574!2sSenac%20Americana!5e0!3m2!1spt-BR!2sbr!4v1666917512481!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            <footer class="rodape">
+                <h2 class="titulo-rodape">
+                    <span class="titulo-pequeno">bolos do</span><br>João
+                </h2>
+                <p class="redes-sociais">
+                    <a href="https://instagram.com" target="blank">
+                        <img src="imagens/instagram.png" alt="logo do Instagram">
+                    </a>
+                    <a href="https://facebook.com" target="blank">
+                        <img src="imagens/facebook.png" alt="logo do Facebook">
+                    </a>
+                </p>
+            </footer>
         </div>
     </main>
     <script src="app.js"></script>
